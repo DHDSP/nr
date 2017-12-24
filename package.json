@@ -28,6 +28,11 @@
         "node-red-node-msgpack": "*",
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
+	"node-red-contrib-alexa-local": "*",
+	"node-red-contrib-influxdb": "*",
+	"node-red-contrib-milight-2": "*",
+	"node-red-contrib-owfs": "*",
+	"node-red-dashboard": "*",
         "node-red-node-random": "*"
     },
     "engines": {
