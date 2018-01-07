@@ -1,5 +1,10 @@
 FROM node:latest
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends dnsutils && \
+    apt-get clean && \
+rm -rf /var/cache/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 # Home directory for Node-RED application source code.
 RUN mkdir -p /usr/src/node-red
 
