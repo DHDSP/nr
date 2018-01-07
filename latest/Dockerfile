@@ -1,5 +1,7 @@
 FROM node:latest
 
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends dnsutils && \
     apt-get clean && \
